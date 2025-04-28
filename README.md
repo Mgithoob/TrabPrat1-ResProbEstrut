@@ -14,6 +14,8 @@
 - *Main.java*
 
 #### Descrição dos arquivos:
+
+
 ##### *Fila_atend.java*
 
 Simula uma fila dinâmica de clientes a serem atendidos. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente da classe *ListaEncadeada*. 
@@ -28,6 +30,7 @@ Contém os métodos:
 - vazia() (_Retorna boolean. Sem parâmetros. Verifica se a fila está vazia e retorna o resultado._)
 - imprimir(debug) (Não tem retorno. Recebe um boolean debug. Imprime a fila, se debug tiver valor verdadeiro, imprimirá os dados dentro dos atributos também.)
 
+
 ##### *Pilha_hist.java*
 
 Simula um histórico de solicitações com uso de uma pilha dinâmica. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente da classe *ListaEncadeada*. 
@@ -40,6 +43,7 @@ Contém os métodos:
 - remover() (_Retorna um Elemento. Sem parâmetros. Irá remover o nó no topo da pilha e retornar seus dados, que estão contidos em um objeto Elemento._)
 - vazia() (_Retorna boolean. Sem parâmetros. Verifica se a pilha está vazia e retorna o resultado._)
 - imprimir(debug) (Não tem retorno. Recebe um boolean debug. Imprime a pilha, se debug tiver valor verdadeiro, imprimirá os dados dentro dos atributos também.)
+
 
 ##### *ListaEncadeada.java*
 
