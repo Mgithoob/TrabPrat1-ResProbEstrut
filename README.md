@@ -2,6 +2,7 @@
 # TRABALHO PRÁTICO 1: Sistema de Gerenciamento de Atendimento ao Cliente
 # Resolução de Problemas Estruturados em Computação 
 
+_Obs: Apesar deste ser a documentação deste trabalho, recomendo ler os comentários no código ao procurar maior compreensão do funcionamento do mesmo._
 
 ## Arquivos:
 
@@ -55,12 +56,27 @@ O funcionamento da lista é baseada nessa classe interna.
 
 Agora, se referindo à classe _ListaEncadeada_ em si...
 Contém o atributo:
-- cabeca (_Tipo Nó. Marca a cabeca da fila._)
+- cabeca (_Tipo Nó. Marca a cabeça da fila._)
 
 Contém os métodos:
 - inserir(dado1, dado2, dado3) (_Não tem retorno. Recebe 3 Strings, estas sendo os 3 dados que o Elemento dentro de um No carrega. Esses parâmetros serão inseridos a um novo nó no final da lista._)
 - remover(pos) (_Sem retorno. Recebe um parâmetro int que indica a posição do nó a ser removido. Irá remover o nó na posição escolhida._)
 - imprimir(nome1, nome2, nome3) (_Não tem retorno. Recebe 3 Strings, que serão os nomes dos dados a serem impridos. Imprime a lista._)
+
+#### *Elemento.java*
+
+Estrutura auxiliar. Seu único objetivo é conter 3 Strings.
+
+Contém os atributos:
+- dado1 (_Tipo String. Contém dados em uma String._)
+- dado2 (_Tipo String. Contém dados em uma String._)
+- dado3 (_Tipo String. Contém dados em uma String._)
+
+Contém métodos getters e setters.
+
+#### *Main.java*
+
+Classe que contém o main. Os testes das classes serão realizados aqui.
 
 ## Instruções:
 
