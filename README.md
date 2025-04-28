@@ -65,7 +65,7 @@ Contém os métodos:
 
 #### *Elemento.java*
 
-Estrutura auxiliar. Seu único objetivo é conter 3 Strings.
+Estrutura auxiliar. Seu único objetivo é conter 3 Strings. Utilizado no atributo _dados_ da classe _No_.
 
 Contém os atributos:
 - dado1 (_Tipo String. Contém dados em uma String._)
