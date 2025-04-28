@@ -1,10 +1,9 @@
 
 # TRABALHO PRÁTICO 1: Sistema de Gerenciamento de Atendimento ao Cliente
+# Resolução de Problemas Estruturados em Computação 
 
-## Resolução de Problemas Estruturados em Computação 
 
-
-### Arquivos:
+## Arquivos:
 
 - *Fila_atend.java*
 - *Pilha_hist.java*
@@ -13,10 +12,10 @@
 - *ListaEncadeada.java*
 - *Main.java*
 
-#### Descrição dos arquivos:
+### Descrição dos arquivos:
 
 
-##### *Fila_atend.java*
+#### *Fila_atend.java*
 
 Simula uma fila dinâmica de clientes a serem atendidos. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente da classe *ListaEncadeada*. 
 Contém os atributos:
@@ -31,7 +30,7 @@ Contém os métodos:
 - imprimir(debug) (Não tem retorno. Recebe um boolean debug. Imprime a fila, se debug tiver valor verdadeiro, imprimirá os dados dentro dos atributos também.)
 
 
-##### *Pilha_hist.java*
+#### *Pilha_hist.java*
 
 Simula um histórico de solicitações com uso de uma pilha dinâmica. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente da classe *ListaEncadeada*. 
 Contém os atributos:
@@ -45,7 +44,7 @@ Contém os métodos:
 - imprimir(debug) (Não tem retorno. Recebe um boolean debug. Imprime a pilha, se debug tiver valor verdadeiro, imprimirá os dados dentro dos atributos também.)
 
 
-##### *ListaEncadeada.java*
+#### *ListaEncadeada.java*
 
 A lista encadeada simples circular que provém o funcionamento das classes _Pilha_hist_ e _Fila_atend_ por debaixo do capô. Genérica, compatível com as duas.
 Ela contém uma classe interna _No_. Essa tem os atributos:
@@ -63,6 +62,6 @@ Contém os métodos:
 - remover(pos) (_Sem retorno. Recebe um parâmetro int que indica a posição do nó a ser removido. Irá remover o nó na posição escolhida._)
 - imprimir(nome1, nome2, nome3) (_Não tem retorno. Recebe 3 Strings, que serão os nomes dos dados a serem impridos. Imprime a lista._)
 
-### Instruções:
+## Instruções:
 
 Dentro do arquivo *Main.java*, há testes para as duas implementações. Tem suficientes comentários e impressões tal que basta rodar ele e observar a output no terminal.
