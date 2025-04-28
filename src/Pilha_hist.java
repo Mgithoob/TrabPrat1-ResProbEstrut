@@ -12,22 +12,6 @@ public class Pilha_hist {
         topo = dados.cabeca;
     }
 
-    // Retorna os dados do topo.
-    public Elemento olharTopo() {
-        if(!vazia()) {
-            ListaEncadeada.No procura = dados.cabeca;
-
-            // Iterar a lista até chegar ao anterior do topo
-            while (procura.proximo != topo) {
-                procura = procura.proximo;
-            }
-            return procura.dados;
-        }
-
-        System.out.println("A pilha está vazia. Não é possível olhar o topo.");
-        return null;
-    }
-
     // Adicionar solicitação ao topo da pilha
     public void adicionar(String id_sol, String desc, String data_hora) {
         topo.dados = new Elemento(id_sol, desc, data_hora);
