@@ -16,7 +16,7 @@
 #### Descrição dos arquivos:
 ##### *Fila_atend.java*
 
-Simula uma fila dinâmica de clientes a serem atendidos. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente do arquivo *ListaEncadeada.java*. 
+Simula uma fila dinâmica de clientes a serem atendidos. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente da classe *ListaEncadeada*. 
 Contém os atributos:
 - frente (_Tipo Nó. Marca o início da fila._) 
 - tras (_Tipo Nó. Marca o fim da fila._)
@@ -28,9 +28,37 @@ Contém os métodos:
 - vazia() (_Retorna boolean. Sem parâmetros. Verifica se a fila está vazia e retorna o resultado._)
 - imprimir(debug) (Não tem retorno. Recebe um boolean debug. Imprime a fila, se debug tiver valor verdadeiro, imprimirá os dados dentro dos atributos também.)
 
+##### *Pilha_hist.java*
+
+Simula um histórico de solicitações com uso de uma pilha dinâmica. Implementada com o uso da estrutura de uma lista encadeada circular, proveniente da classe *ListaEncadeada*. 
+Contém os atributos:
+- topo (_Tipo Nó. Marca o topo da pilha._) 
+- dados (_Tipo ListaEncadeada. Contém os dados da pilha._)
+
+Contém os métodos:
+- adicionar(id_sol, desc, data_hora) (_Não tem retorno. Recebe 3 Strings, estas sendo: Id da solicitação, descrição da solicitação, e um timestamp. Esses parâmetros serão inseridos a um novo nó no topo da pilha._)
+- remover() (_Retorna um Elemento. Sem parâmetros. Irá remover o nó no topo da pilha e retornar seus dados, que estão contidos em um objeto Elemento._)
+- vazia() (_Retorna boolean. Sem parâmetros. Verifica se a pilha está vazia e retorna o resultado._)
+- imprimir(debug) (Não tem retorno. Recebe um boolean debug. Imprime a pilha, se debug tiver valor verdadeiro, imprimirá os dados dentro dos atributos também.)
+
+##### *ListaEncadeada.java*
+
+A lista encadeada simples circular que provém o funcionamento das classes _Pilha_hist_ e _Fila_atend_ por debaixo do capô. Genérica, compatível com as duas.
+Ela contém uma classe interna _No_. Essa tem os atributos:
+- dados (_Tipo Elemento. Contém os dados do nó_)
+- proximo (_Tipo No. Aponta para o próximo nó na lista._)
+
+O funcionamento da lista é baseada nessa classe interna.
+
+Agora, se referindo à classe _ListaEncadeada_ em si...
+Contém o atributo:
+- cabeca (_Tipo Nó. Marca a cabeca da fila._)
+
+Contém os métodos:
+- inserir(dado1, dado2, dado3) (_Não tem retorno. Recebe 3 Strings, estas sendo os 3 dados que o Elemento dentro de um No carrega. Esses parâmetros serão inseridos a um novo nó no final da lista._)
+- remover(pos) (_Sem retorno. Recebe um parâmetro int que indica a posição do nó a ser removido. Irá remover o nó na posição escolhida._)
+- imprimir(nome1, nome2, nome3) (_Não tem retorno. Recebe 3 Strings, que serão os nomes dos dados a serem impridos. Imprime a lista._)
 
 ### Instruções:
 
-Dentro do arquivo *Main.java*, terão testes comentados para cada questão. Descomentar, realizar teste, comentar novamente.
-
-*Observação: Em todos os códigos, o valor 0 (int) é tratado como vazio.*
+Dentro do arquivo *Main.java*, há testes para as duas implementações. Tem suficientes comentários e impressões tal que basta rodar ele e observar a output no terminal.
